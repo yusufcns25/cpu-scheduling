@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>CPU Scheduling Algorithms - Rapor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f7f7f7;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 30px;
+            background-color: #ffffff;
+        }
+        th, td {
+            border: 1px solid #cccccc;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #34495e;
+            color: white;
+        }
+        .box {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>CPU Scheduling Algorithms – Etkileşimli Proje Raporu</h1>
+
+<div class="box">
+    <h2>1. Giriş</h2>
+    <p>
+        Bu projede CPU zamanlama algoritmaları iki farklı senaryo (case1 ve case2)
+        için simüle edilmiştir. Amaç algoritmaların performanslarını karşılaştırmaktır.
+    </p>
+</div>
+
+<div class="box">
+    <h2>2. Kullanılan Algoritmalar</h2>
+    <ul>
+        <li>FCFS</li>
+        <li>SJF (Preemptive)</li>
+        <li>SJF (Non-Preemptive)</li>
+        <li>Priority (Preemptive)</li>
+        <li>Priority (Non-Preemptive)</li>
+        <li>Round Robin</li>
+    </ul>
+</div>
+
+<div class="box">
+    <h2>3. Performans Kriterleri</h2>
+    <ul>
+        <li>Waiting Time</li>
+        <li>Turnaround Time</li>
+        <li>Throughput</li>
+        <li>CPU Verimliliği</li>
+        <li>Bağlam Değiştirme Sayısı</li>
+    </ul>
+</div>
+
+<div class="box">
+    <h2>4. Case 1 Performans Karşılaştırması</h2>
+    <table>
+        <tr>
+            <th>Algoritma</th>
+            <th>Avg Waiting</th>
+            <th>Avg Turnaround</th>
+            <th>CPU Verimliliği</th>
+        </tr>
+        <tr><td>FCFS</td><td>Düşük</td><td>Orta</td><td>Yüksek</td></tr>
+        <tr><td>SJF</td><td>Çok Düşük</td><td>Düşük</td><td>Yüksek</td></tr>
+        <tr><td>Round Robin</td><td>Orta</td><td>Orta</td><td>Orta</td></tr>
+    </table>
+</div>
+
+<div class="box">
+    <h2>5. Case 2 Performans Karşılaştırması</h2>
+    <table>
+        <tr>
+            <th>Algoritma</th>
+            <th>Avg Waiting</th>
+            <th>Avg Turnaround</th>
+            <th>CPU Verimliliği</th>
+        </tr>
+        <tr><td>FCFS</td><td>Orta</td><td>Orta</td><td>Yüksek</td></tr>
+        <tr><td>SJF</td><td>Çok Düşük</td><td>Düşük</td><td>Yüksek</td></tr>
+        <tr><td>Round Robin</td><td>Orta</td><td>Orta</td><td>Orta</td></tr>
+    </table>
+</div>
+
+<div class="box">
+    <h2>6. Sonuç</h2>
+    <p>
+        Yapılan deneyler sonucunda SJF algoritmaları en düşük ortalama bekleme süresini
+        sağlamıştır. Round Robin algoritması adaletli çalışmasına rağmen bağlam değiştirme
+        maliyeti nedeniyle verimlilik açısından daha düşüktür.
+    </p>
+</div>
+
+</body>
+</html>
